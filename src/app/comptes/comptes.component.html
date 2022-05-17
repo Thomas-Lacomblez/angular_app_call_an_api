@@ -1,0 +1,10 @@
+<a routerLink="/new-compte">Nouveau compte</a>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let compte of comptes">
+
+        id du compte : {{ compte.id }} |
+        solde du compte : {{ compte.solde }} |
+        date de création du compte : {{ compte.dateCreation | date: 'EEEE d MMMM y' }} |
+        type du compte : {{ compte.type }}
+    </li>
+</ul>

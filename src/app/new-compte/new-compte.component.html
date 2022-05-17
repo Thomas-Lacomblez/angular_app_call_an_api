@@ -1,0 +1,18 @@
+<div class="col-sm-8 col-sm-offset-2">
+    <form [formGroup]="compteForm" (ngSubmit)="onSubmitForm()">
+        <div class="form-group">
+            <label for="solde">solde</label>
+            <input type="text" class="form-control" id="solde" formControlName="solde" />
+        </div>
+        <div class="form-group">
+            <label for="dateCreation">dateCreation</label>
+            <input type="date" class="form-control" id="dateCreation" formControlName="dateCreation" />
+        </div>
+        <div class="form-group">
+            <label for="type">type</label>
+            <input type="type" class="form-control" id="type" formControlName="type" />
+        </div>
+        <br />
+        <button class="btn btn-primary" type="submit" [disabled]="compteForm.invalid">Soumettre</button>
+    </form>
+</div>
